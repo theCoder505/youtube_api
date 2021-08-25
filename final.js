@@ -12,11 +12,12 @@ function makeRequest() {
         part: 'snippet',
         type: "video",
         maxResults: 25,
-        order: "viewCount"
+        // order: "viewCount"
     });
     request.execute(function(response) {
         $('#results').empty();
         $('#results').append('<div class="loader d-none"></div>');
+        $("#srchVideos").html("Search Results");
         var srchItems = response.result.items;
         console.log(srchItems.length);
         $.each(srchItems, function(index, item) {
@@ -29,7 +30,7 @@ function makeRequest() {
         });
         if (srchItems.length === 0) {
             // alert("No Such Result Found");
-            $('#results').append("<div class='centerAlert'><h2> No Such Result Found </h2></div>");
+            $('#results').append("<div class='centerAlert'><h2> No Result Found </h2></div>");
         }
     });
 }

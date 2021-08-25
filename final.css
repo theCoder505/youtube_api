@@ -56,7 +56,7 @@ input:focus {
 
 .cstmYTVideo {
     width: 900px;
-    height: 350px;
+    height: 400px;
 }
 
 .loader {
@@ -118,7 +118,6 @@ input:focus {
         font-size: 15px;
     }
     .cstmYTVideo {
-        width: 280px;
-        height: 150px;
+        width: 90%;
     }
 }
