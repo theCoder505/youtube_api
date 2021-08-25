@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="final.css">
+    <title>Search By Youtube API</title>
+</head>
+
+<body>
+
+    <div id="searchDiv">
+        <label> <input id="query" value='cats' autofocus type="text"/><button id="search-button" onclick="keyWordsearch()">Search</button></label>
+    </div>
+    <div id="container">
+        <h1>Search Results</h1>
+        <div id="results"></div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="final.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+</body>
+
+</html>
